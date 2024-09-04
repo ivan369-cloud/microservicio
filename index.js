@@ -4,8 +4,10 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 const cors = require('cors');
 
-app.use(cors());
+
 const app = express();
+
+app.use(cors());
 app.use(bodyParser.json());
 
 // Configuración de la conexión a la base de datos
